@@ -1,4 +1,4 @@
-import { Product } from "../src/schemas/products.schema.ts";
+import { Product } from "../src/schemas/products.schema";
 
 const products: Product[] = [
   {

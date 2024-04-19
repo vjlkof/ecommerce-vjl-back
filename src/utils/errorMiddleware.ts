@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { logger } from "./logger.ts";
+import { logger } from "./logger";
 
 export default function errorMiddleware(
   err: Error,

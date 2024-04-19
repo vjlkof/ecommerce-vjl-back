@@ -1,7 +1,7 @@
-import { Product, FilterSearchField } from "../schemas/products.schema.ts";
-import getFilteredProducts from "../utils/getFilteredProducts.ts";
+import { Product, FilterSearchField } from "../schemas/products.schema";
+import getFilteredProducts from "../utils/getFilteredProducts";
 import axios from "axios";
-import products2 from "../../mockData/product.ts";
+import products2 from "../../mockData/product";
 
 interface resultWithPagination {
   resultQtty: number;

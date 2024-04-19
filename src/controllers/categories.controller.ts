@@ -1,5 +1,5 @@
 import { type Request, type Response, type NextFunction } from "express";
-import { CategoriesServices } from "../services/categories.service.ts";
+import { CategoriesServices } from "../services/categories.service";
 import { StatusCodes } from "http-status-codes";
 
 export async function get(

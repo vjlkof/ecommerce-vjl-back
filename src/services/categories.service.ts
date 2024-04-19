@@ -1,6 +1,6 @@
-import { Product, Category } from "../schemas/products.schema.ts";
+import { Product, Category } from "../schemas/products.schema";
 import axios from "axios";
-import products2 from "../../mockData/product.ts";
+import products2 from "../../mockData/product";
 
 interface Result {
   data: string[];
