@@ -1,7 +1,7 @@
-import { Product, FilterSearchField } from "../schemas/products.schema";
-import getFilteredProducts from "../utils/getFilteredProducts";
+import { Product, FilterSearchField } from "../schemas/products.schema.js";
+import getFilteredProducts from "../utils/getFilteredProducts.js";
 import axios from "axios";
-import products2 from "../../mockData/product";
+import products2 from "../../mockData/product.js";
 
 interface resultWithPagination {
   resultQtty: number;

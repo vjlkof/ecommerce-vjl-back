@@ -12,7 +12,7 @@ export default function validationMiddleware(
       body: req.body,
       query: req.query,
     });
-    if (!result.success) {
+    if (result.success === false) {
       const errorFormatted = result.error.format();
       res.status(StatusCodes.BAD_REQUEST).json(errorFormatted);
     } else {

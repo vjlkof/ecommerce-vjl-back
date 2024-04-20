@@ -2,8 +2,8 @@ import {
   Product,
   Category,
   FilterSearchField,
-} from "../schemas/products.schema";
-import config from "../config/config";
+} from "../schemas/products.schema.js";
+import config from "../config/config.js";
 
 export default function getFilteredProducts(
   filterSearchQuery: FilterSearchField,

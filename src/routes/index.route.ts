@@ -1,7 +1,7 @@
 import { Router } from "express";
-import routerProduct from "./products.route";
-import routerCategories from "./categories.route";
-import { HomeController } from "../controllers/home.controller";
+import routerProduct from "./products.route.js";
+import routerCategories from "./categories.route.js";
+import { HomeController } from "../controllers/home.controller.js";
 
 const router = Router();
 

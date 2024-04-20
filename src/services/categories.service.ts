@@ -1,6 +1,6 @@
-import { Product, Category } from "../schemas/products.schema";
+import { Product, Category } from "../schemas/products.schema.js";
 import axios from "axios";
-import products2 from "../../mockData/product";
+import products2 from "../../mockData/product.js";
 
 interface Result {
   data: string[];
