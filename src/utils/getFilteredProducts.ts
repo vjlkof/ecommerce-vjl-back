@@ -65,11 +65,15 @@ export default function getFilteredProducts(
     }
 
     if ("category" in filterSearchQuery && !!filterSearchQuery.category) {
-      const searchCategory = filterSearchQuery.category;
-      return product.categories.find((category: Category) => {
-        return (
-          category.name.toLowerCase() ===
-          searchCategory.toLowerCase().split("-").join(" ")
+      const searchCategories = filterSearchQuery.category
+        .split("-")
+        .join(" ")
+        .split(",");
+
+      return searchCategories.every((searchCategory: string) => {
+        return product.categories.some(
+          (category: Category) =>
+            category.name.toLowerCase() === searchCategory.toLowerCase(),
         );
       });
     }
